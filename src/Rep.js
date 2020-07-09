@@ -125,7 +125,9 @@ class Rep extends Component {
 
       </Row>
 
-
+      <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px', marginBottom:'20px'}}>
+          <Col > <h1 style={{color: "red", fontSize: "3em"}}>------------------------------------------</h1> </Col>
+      </Row>
 
       </div>
 

@@ -85,7 +85,7 @@ class Dem extends Component {
         </Row>
 
 
-        <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
+        <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px', marginBottom:'20px'}}>
           <Col>
             <TwitterTimelineEmbed
               sourceType="profile"
@@ -113,8 +113,10 @@ class Dem extends Component {
               options={{height: 550, width: 450}}
             />
           </Col>
-        
+      </Row>
 
+      <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
+          <Col > <h1 style={{color: "red", fontSize: "3em"}}>------------------------------------------</h1> </Col>
       </Row>
 
 
