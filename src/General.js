@@ -16,7 +16,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 
-class US extends Component {
+class General extends Component {
 
   constructor(props) {
     super(props)
@@ -38,7 +38,7 @@ class US extends Component {
     return (
     <div>
       <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
-          <Col > <h1 style={{color: "red", fontSize: "3em"}}>team:</h1> </Col>
+          <Col > <h1 style={{color: "red", fontSize: "3em"}}></h1> </Col>
       </Row>
       <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px', marginRight: '40px'}}>
           <Col>
@@ -51,9 +51,10 @@ class US extends Component {
             />
           </Col>
           <Col>
+
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName= "RepGolden"
+              screenName= "OnlineSentinel"
               noFooter='true'
               noBorder='true'
               options={{height: 550, width: 450}}
@@ -62,7 +63,7 @@ class US extends Component {
           <Col>
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName= "RepGolden"
+              screenName= "bangordailynews"
               noFooter='true'
               noBorder='true'
               options={{height: 550, width: 450}}
@@ -71,7 +72,7 @@ class US extends Component {
           <Col>
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName= "RepGolden"
+              screenName= "MidcoastNews"
               noFooter='true'
               noBorder='true'
               options={{height: 550, width: 450}}
@@ -79,16 +80,16 @@ class US extends Component {
           </Col>
 
       </Row>
-
-
-      <Row className="justify-content-md-center"  style={{marginTop:'40px', marginLeft: '30px'}}>
-          <Col > <h1 style={{color: "blue", fontSize: "3em"}}>suporters: </h1> </Col>
+      <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
+          <Col > <h1 style={{color: "red", fontSize: "3em"}}>------------------------------------------</h1> </Col>
       </Row>
+
+
       <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
         <Col>
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName= "RepGolden"
+            screenName= "newscentermaine"
             noFooter='true'
             noBorder='true'
             options={{height: 550, width: 450}}
@@ -97,7 +98,7 @@ class US extends Component {
         <Col>
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName= "RepGolden"
+            screenName= "GDBIW"
             noFooter='true'
             noBorder='true'
             options={{height: 550, width: 450}}
@@ -106,7 +107,16 @@ class US extends Component {
         <Col>
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName= "RepGolden"
+            screenName= "MEAFLCIO"
+            noFooter='true'
+            noBorder='true'
+            options={{height: 550, width: 450}}
+          />
+        </Col>
+        <Col>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName= "mikeshepherdME"
             noFooter='true'
             noBorder='true'
             options={{height: 550, width: 450}}
@@ -114,66 +124,7 @@ class US extends Component {
         </Col>
     </Row>
 
-    <Row className="justify-content-md-center"  style={{marginTop:'40px', marginLeft: '30px'}}>
-        <Col > <h1 style={{color: "purple", fontSize: "3em"}}>hashtags: </h1> </Col>
-    </Row>
-    <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
-      <Col>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName= "RepGolden"
-          noFooter='true'
-          noBorder='true'
-          options={{height: 550, width: 450}}
-        />
-      </Col>
-      <Col>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName= "RepGolden"
-          noFooter='true'
-          noBorder='true'
-          options={{height: 550, width: 450}}
-        />
-      </Col>
-      <Col>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName= "RepGolden"
-          noFooter='true'
-          noBorder='true'
-          options={{height: 550, width: 450}}
-        />
-      </Col>
-  </Row>
 
-
-  <Row className="justify-content-md-center"  style={{marginTop:'40px', marginLeft: '30px'}}>
-      <Col > <h1 style={{color: "green", fontSize: "3em"}}>news: </h1> </Col>
-  </Row>
-  <Row className="justify-content-md-center"  style={{marginTop:'20px', marginLeft: '30px'}}>
-    <Col>
-
-    </Col>
-    <Col>
-      <TwitterTimelineEmbed
-        sourceType="profile"
-        screenName= "RepGolden"
-        noFooter='true'
-        noBorder='true'
-        options={{height: 550, width: 450}}
-      />
-    </Col>
-    <Col>
-      <TwitterTimelineEmbed
-        sourceType="profile"
-        screenName= "RepGolden"
-        noFooter='true'
-        noBorder='true'
-        options={{height: 550, width: 450}}
-      />
-    </Col>
-</Row>
 
     </div>
 
@@ -186,8 +137,6 @@ class US extends Component {
 
   (async () => {
     let newsFeed = await parser.parseURL("https://cors-anywhere.herokuapp.com/https://bangordailynews.com/feed/");
-
-
     this.setFeed(newsFeed)
   })();
 
@@ -198,7 +147,7 @@ class US extends Component {
 
  }
 
-export default US
+export default General
 
 
 //
