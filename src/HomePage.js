@@ -16,9 +16,9 @@ class HomePage extends Component {
   constructor(props) {
       super(props)
       this.state = {
-        optionSelected: "",
-        passcode: ""  }
+        optionSelected: ""
       }
+    }
 
   setRequestedPerson = name => {
     this.setState({
@@ -54,8 +54,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-
-            {this.state.passcode==="531" ? this.displayHeader() : this.displayInput()}
+            {this.displayHeader()}
             {this.state.optionSelected==="General" ? <General /> : ''}
             {this.state.optionSelected==="Rep" ? <Rep /> : ''}
             {this.state.optionSelected==="Dem" ? <Dem /> : ''}
