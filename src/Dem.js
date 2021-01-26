@@ -119,8 +119,6 @@ class Dem extends Component {
           <Col > <h1 style={{color: "red", fontSize: "3em"}}>------------------------------------------</h1> </Col>
       </Row>
 
-
-
       </div>
 
     )

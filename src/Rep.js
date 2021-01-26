@@ -51,16 +51,6 @@ class Rep extends Component {
               />
             </Col>
             <Col>
-
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName= "AdrienneMaine"
-                noFooter='true'
-                noBorder='true'
-                options={{height: 550, width: 450}}
-              />
-            </Col>
-            <Col>
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName= "SenatorCollins"
@@ -73,6 +63,16 @@ class Rep extends Component {
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName= "DaleCraftsME"
+                noFooter='true'
+                noBorder='true'
+                options={{height: 550, width: 450}}
+              />
+            </Col>
+            <Col>
+
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName= "AdrienneMaine"
                 noFooter='true'
                 noBorder='true'
                 options={{height: 550, width: 450}}
