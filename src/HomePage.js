@@ -55,7 +55,6 @@ class HomePage extends Component {
     return (
       <div>
 
-
             {this.state.passcode==="531" ? this.displayHeader() : this.displayInput()}
             {this.state.optionSelected==="General" ? <General /> : ''}
             {this.state.optionSelected==="Rep" ? <Rep /> : ''}

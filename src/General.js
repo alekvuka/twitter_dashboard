@@ -44,7 +44,7 @@ class General extends Component {
           <Col>
             <TwitterTimelineEmbed
               sourceType="profile"
-              screenName= "RepGolden"
+              screenName= "PressHerald"
               noFooter='true'
               noBorder='true'
               options={{height: 550, width: 450}}
